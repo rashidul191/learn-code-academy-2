@@ -1,0 +1,17 @@
+.header-container{
+    height: 600px;
+    width: 100%;
+    background-color: #EAF4F6;
+}
+.header-l-site-color{
+    height: 600px;
+    width: 30%;
+    background-color: #EAF4F6;
+   
+}
+.header-r-site-color{
+    height: 600px;
+    width: 30%;
+    background-color: #C7DEE4;
+    
+}
