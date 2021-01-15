@@ -1,3 +1,18 @@
+Learn Code-Academy
+
+Overview: A travel guru hotel agency web application. A demo web app for booking hotels of 3 different spots. Users can select any spot for booking with a signup process. The hotel suggestion is given according to the selected spot.
+
+Technology: JavaScript, React, Bootstrap, Material-UI, Firebase Authentication.
+
+Website: https://tender-hermann-4c40fa.netlify.app/
+
+GitHub Repository: 
+
+Resume Link: https://drive.google.com/file/d/163zEw4V0DUeRFnh3gcs44hrB3nkc_FR9/view?usp=sharing
+
+LinkedIn Link : https://www.linkedin.com/in/rashidul191/
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
