@@ -1,8 +1,6 @@
 .main-logo-size{
-    height: 60px;
+    height: 40px;
 }
-.signIn-btn{
-    border: none;
-    height: 30px;
-    background-color: white;
+.nav-head{
+    border-bottom: 5px solid rgb(47, 177, 80) ;
 }

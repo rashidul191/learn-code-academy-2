@@ -1,17 +1,8 @@
-.header-container{
-    height: 600px;
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#header{
+    height: auto;
     width: 100%;
-    background-color: #EAF4F6;
-}
-.header-l-site-color{
-    height: 600px;
-    width: 30%;
-    background-color: #EAF4F6;
-   
-}
-.header-r-site-color{
-    height: 600px;
-    width: 30%;
-    background-color: #C7DEE4;
-    
 }

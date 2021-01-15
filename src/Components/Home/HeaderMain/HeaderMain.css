@@ -1,6 +1,12 @@
-.frame-img-size{
-    height: 515px;
+#header-main{
+    background-color: rgb(214, 236, 236);
 }
-.header-center{
-    margin: 0 auto;
+small{
+    font-size: 12px;
+}
+.border-line-header{
+    border-left: 1px solid sienna;
+}
+.header-pic{
+    height: 300px;
 }

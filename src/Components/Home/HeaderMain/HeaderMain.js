@@ -1,35 +1,36 @@
 import React from 'react';
 import './HeaderMain.css';
-import Frame from '../../../Images/logo/Frame.png';
+import headerPic from '../../../Images/logo/header-pic1.jpg';
 
 const HeaderMain = () => {
     return (
-        <section className="container">
-            <div className="row">
-                <div className="col-md-6 header-center mt-5 pt-5">
-                    <h6><small style={{color:"#EA5922"}}>... Welcome To EduPlus</small></h6>
-                    <h1>More Then 200+ <br />Online Courses</h1>
-                    <div className="pt-3">
-                        <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
-                    <div className="pt-3">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <p><small>Sed ut persplclatis unde omnis <br />natus error sit valuptatem</small></p>
-
+        <section id="header-main">
+            <div className="container r">
+                <div className="row py-5 px-5">
+                    <div className="col-lg-8  col-md-12 pl-5  ">
+                        <small>... Welcome to <span className="text-danger"> Learn Code Academy </span></small>
+                        <h2 className="" >More than 200 <br /> Online Courses</h2>
+                        <nav class="navbar navbar-light">
+                            <form class="d-flex">
+                                <input class="form-control " type="search" placeholder="Search" aria-label="Search" />
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </nav>
+                        <div className="row ">
+                            <div className="col-lg-4 col-md-3 col-sm-4 ">
+                                <small>Sed ut perspiciatis under omnis <br /> natus error sit voluptatem</small>
                             </div>
-                            <div className="col-md-6">
-                                <p><small>ONLINE SUPPORT <br />+0123456789</small></p>
+                            <div className="col-lg-0 col-md-0 col-sm-0 col-xs-0 border-line-header"></div>
+
+                            <div className=" col-lg-4 col-md-3 col-sm-4">
+                                <small>ONLINE SUPPORT</small><br />
+                                <small>+0123456789</small>
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <div className="col-md-6">
-                    <img className="frame-img-size" src={Frame} alt="" />
+                    <div className="col-lg-4 col-md-12  ">
+                        <img className="header-pic rounded img-fluid" src={headerPic} alt="Picture" />
+                    </div>
                 </div>
             </div>
 
