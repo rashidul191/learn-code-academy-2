@@ -55,7 +55,6 @@ const Course = () => {
                     </div> 
                     <div className="text-center ">
                         <a className=" btn btn-primary" href="#">Lone More --></a>
-
                     </div>
                 </div>               
             </div>
