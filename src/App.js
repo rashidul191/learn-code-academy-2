@@ -37,7 +37,7 @@ function App() {
 
           <Router path="/course/datles">
             <CoursesDetails></CoursesDetails>
-          </Router>
+          </Router>        
 
           <Router path="*">
             <NoMatch></NoMatch>

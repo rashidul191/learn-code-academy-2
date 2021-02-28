@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import logo from '../../../Images/logo/Logo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -15,7 +16,7 @@ const Navbar = () => {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link mr-2" href="#home">Home</a>
+                                <Link to="/home"> <a class="nav-link mr-2" href="">Home</a> </Link>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link  mr-2" href="#events">Events</a>

@@ -26,13 +26,16 @@ const Course = () => {
                                             <p>Enrolled 191 </p>
                                         </div>
                                         <div class="card-footer">
-                                            <h5>$123</h5>
-                                            <h6><del>$123</del></h6>
-                                            <button className="btn btn-primary">Add To Cart</button>
-                                        </div>
-                                       
+                                            <div className="row">
+                                            <h5 className="mx-3">$123</h5>
+                                            <h6 className="mr-4"><del>$123</del></h6>
+                                            <button className="btn btn-primary ml-4 ">Add To Cart</button>
+                                            </div>                                            
+                                        </div>                                       
                                     </div>
                                 </div>
+
+
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="card h-100">
                                         <img src="..." class="card-img-top" alt="..." />
