@@ -8,6 +8,7 @@ const Footer = () => {
         <section id="footer-section  text-center">
             <div className="bg-dark text-light">
                 <div className="container  p-5">
+                    
                     <div className="row ">
                         <div className="col-md-4">
                             <img className="footer-logo-size" src={logo} alt="" />
