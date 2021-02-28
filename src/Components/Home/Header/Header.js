@@ -9,7 +9,11 @@ const Header = () => {
             <div className="">
                 <Navbar></Navbar>
                 <HeaderMain></HeaderMain>
+                <div>
+
+                </div>
             </div>
+
         </section>
     );
 };

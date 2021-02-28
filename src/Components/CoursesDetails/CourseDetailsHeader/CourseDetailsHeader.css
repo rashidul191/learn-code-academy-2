@@ -1,0 +1,13 @@
+.instractor-arya{
+    height: auto;
+    width: 500px;
+    border: 1px solid rgb(231, 173, 173);
+    background-color: rgb(252, 245, 234);
+    
+}
+
+.instractor-images{
+    height: 110px ;
+    width: auto;
+    border-radius: 50%;
+}

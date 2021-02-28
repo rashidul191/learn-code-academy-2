@@ -13,6 +13,7 @@ import {
 import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
 import NoMatch from './Components/NoMatch/NoMatch';
 import SignIn from './Components/SignIn/SignIn';
+import CoursesDetails from './Components/CoursesDetails/CoursesDetails';
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
           </Router>
           <Router path="/signIn">
             <SignIn></SignIn>
+          </Router>
+
+          <Router path="/course/datles">
+            <CoursesDetails></CoursesDetails>
           </Router>
 
           <Router path="*">

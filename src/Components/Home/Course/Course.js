@@ -1,5 +1,5 @@
 import React from 'react';
-import CoursesDetails from '../../CoursesDetails/CoursesDetails';
+//import CoursesDetails from '../../CoursesDetails/CoursesDetails';
 import webPic from '../../../Images/Annotation 2020-054.jpg'
 import './Course.css';
 const Course = () => {
@@ -22,10 +22,15 @@ const Course = () => {
                                             <h5 class="card-title">Compleat Web Programming Course</h5>
                                             <h5 class="card-text"> <small>  By <span className="text-success">Rashidul Islam</span> </small> </h5>
                                         </div>
-                                        {/* <div class="card-footer">
-                                            <small class="text-muted">Last updated 3 mins ago</small>
-                                        </div> */}
-                                        <div></div>
+                                        <div className="container">
+                                            <p>Enrolled 191 </p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <h5>$123</h5>
+                                            <h6><del>$123</del></h6>
+                                            <button className="btn btn-primary">Add To Cart</button>
+                                        </div>
+                                       
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -53,11 +58,9 @@ const Course = () => {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     );
