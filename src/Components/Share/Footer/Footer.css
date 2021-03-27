@@ -11,3 +11,11 @@
     width: auto;
     
 }
+
+li a{
+    color: tomato;
+}
+
+li a:hover{
+    color: white;
+}

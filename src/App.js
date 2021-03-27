@@ -31,8 +31,12 @@ function App() {
           <Router path="/privacy-policy">
             <PrivacyPolicy></PrivacyPolicy>
           </Router>
-          <Router path="/signIn">
+          <Router path="/sign_in">
             <SignIn></SignIn>
+          </Router>
+
+          <Router path="/sign_up">
+
           </Router>
 
           <Router path="/course/datles">
@@ -42,6 +46,7 @@ function App() {
           <Router path="*">
             <NoMatch></NoMatch>
           </Router>
+          
         </Switch>
       </Router>
 

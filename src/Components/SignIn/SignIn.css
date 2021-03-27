@@ -1,28 +1,26 @@
 #sign-in{
     background-image: url('../../Images/study-imgae.jpg');
     background-repeat: no-repeat;
-    height: 923px;
+    height: 891px;
     width: 100%;
    
 }
 .sign-in-bg{
-    background-color: rgba(0, 0, 0,0.8);
+    background-color: rgba(0, 0, 0,0.6);
     height: 100%;
     width: 100%;
 }
-.container-sign-in{
-    padding-top: 100px;
-}
+
 .sign-in-form{
     background-color: rgb(188, 239, 243);
-    height: 490px;
-    width: 45%;
-    margin: 0 auto;
-    border-radius: 5px;    
+    /* height: auto;
+    width: auto; */
+    margin-left: 150px;
+    margin-right: 150px;
+      
 }
 
-.sign-in-logo{
-    
+.sign-in-logo{    
     height: 50px;
 }
 .logo-position{
