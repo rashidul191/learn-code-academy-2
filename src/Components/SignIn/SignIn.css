@@ -2,7 +2,7 @@
     background-image: url('../../Images/study-imgae.jpg');
     background-repeat: no-repeat;
     height: 891px;
-    width: 100%;
+    width: auto;
    
 }
 .sign-in-bg{
@@ -13,10 +13,8 @@
 
 .sign-in-form{
     background-color: rgb(188, 239, 243);
-    /* height: auto;
-    width: auto; */
-    margin-left: 150px;
-    margin-right: 150px;
+    height: 80%;
+    width: 60%;
       
 }
 
@@ -25,4 +23,30 @@
 }
 .logo-position{
     text-align: center;
+}
+
+.or{
+    color: rgb(177, 113, 113);
+}
+.or::before{
+content: "-----------------";
+}
+
+.or::after{
+content: "-----------------";
+}
+
+.icon-sign-in-body{
+    text-align: center;      
+}
+
+.icon-sign-in{
+    border: 1px solid gray;
+    border-radius: 50px;
+
+}
+
+.sign-logo-size{   
+    height: 30px;
+    width: 40px;
 }

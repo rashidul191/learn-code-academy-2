@@ -14,6 +14,7 @@ import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
 import NoMatch from './Components/NoMatch/NoMatch';
 import SignIn from './Components/SignIn/SignIn';
 import CoursesDetails from './Components/CoursesDetails/CoursesDetails';
+import NewAccount from './Components/NewAccount/NewAccount';
 
 function App() {
   return (
@@ -36,17 +37,17 @@ function App() {
           </Router>
 
           <Router path="/sign_up">
-
+            <NewAccount></NewAccount>
           </Router>
 
           <Router path="/course/datles">
             <CoursesDetails></CoursesDetails>
-          </Router>        
+          </Router>
 
           <Router path="*">
             <NoMatch></NoMatch>
           </Router>
-          
+
         </Switch>
       </Router>
 

@@ -53,7 +53,7 @@ const Navbar = () => {
                                   <Link to="sign_in"><button className="btn btn-success">Login</button></Link>
                                 </li>
                                 <li className="m-1">
-                                    <button className="btn btn-primary">Registration</button>
+                                  <Link to="sign_up"><button className="btn btn-primary">Registration</button></Link>
                                 </li>
                             </ul>
                         </div>
