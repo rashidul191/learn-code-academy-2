@@ -1,14 +1,14 @@
-#footer-section{
+/* #footer-section{
    
-}
+} */
 
 .footer-logo-size{
     height: 40px;
 }
 
 .pay-with{
-    height: 250px;
-    width: auto;
+    height: 100%;
+    width: 100%;
     
 }
 

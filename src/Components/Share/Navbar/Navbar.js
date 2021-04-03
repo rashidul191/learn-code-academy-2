@@ -8,7 +8,7 @@ const Navbar = () => {
         <section className="bg-light nav-head sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <div className="container ">
-                    <a class="navbar-brand" href="#"><img className="main-logo-size" src={logo} alt="" /></a>
+                    <a class="navbar-brand" href="/"><img className="main-logo-size" src={logo} alt="" /></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -52,9 +52,9 @@ const Navbar = () => {
                                 <li className="m-1">
                                   <Link to="sign_in"><button className="btn btn-success">Login</button></Link>
                                 </li>
-                                <li className="m-1">
+                                {/* <li className="m-1">
                                   <Link to="sign_up"><button className="btn btn-primary">Registration</button></Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import './App.css';
 import Home from './Components/Home/Home';
 import {
@@ -15,10 +15,15 @@ import NoMatch from './Components/NoMatch/NoMatch';
 import SignIn from './Components/SignIn/SignIn';
 import CoursesDetails from './Components/CoursesDetails/CoursesDetails';
 import NewAccount from './Components/NewAccount/NewAccount';
+import Checkout from './Components/Checkout/Checkout';
+
+export const UserContext = createContext();
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <section>
+    <UserContext.Provider value = {[loggedInUser, setLoggedInUser]}>
+      <h3>Email: {loggedInUser.email}</h3>
       <Router>
         <Switch>
           <Route exact path="/">
@@ -44,6 +49,10 @@ function App() {
             <CoursesDetails></CoursesDetails>
           </Router>
 
+          <Router path="/checkout">
+           <Checkout></Checkout>
+          </Router>
+
           <Router path="*">
             <NoMatch></NoMatch>
           </Router>
@@ -51,7 +60,7 @@ function App() {
         </Switch>
       </Router>
 
-    </section>
+    </UserContext.Provider>
   );
 }
 

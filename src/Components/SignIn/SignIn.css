@@ -50,3 +50,11 @@ content: "-----------------";
     height: 30px;
     width: 40px;
 }
+
+.err-masseges{
+    color: red;
+}
+
+.success-masseges{
+    color: green;
+}

@@ -1,6 +1,12 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 const CourseDetailsHeader = () => {
+    const histroy = useHistory()
+    const handleBuyNow = () => {
+        histroy.push('/checkout');
+    }
+
     return (
         <section id="courseDetailsHeader ">
             <div className=" bg-dark my-5">
@@ -13,6 +19,7 @@ const CourseDetailsHeader = () => {
                                     <h5 className="ml-5">$123</h5>
                                     <h6 className="mx-3"><del>$123</del></h6>
                                     <button className=" ml-5 btn btn-primary">Add To Cart</button>
+                                    <button className="btn btn-info" onClick={handleBuyNow}>Buy Now</button>
                                 </div>
 
                             </div>

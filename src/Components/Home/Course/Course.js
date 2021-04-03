@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //import CoursesDetails from '../../CoursesDetails/CoursesDetails';
 import webPic from '../../../Images/Annotation 2020-054.jpg'
 import './Course.css';
@@ -20,18 +21,22 @@ const Course = () => {
                                         <img className="img-fluid img-thumbnail rounded" src={webPic} alt="" />
                                         <div class="card-body">
                                             <h5 class="card-title">Compleat Web Programming Course</h5>
-                                            <h5 class="card-text"> <small>  By <span className="text-success">Rashidul Islam</span> </small> </h5>
+                                            <small>  By <span className="text-success">Rashidul Islam</span> </small><br />
+                                            <small>Enrolled 191 </small><br />
+                                            <small>4.7 ⭐⭐⭐⭐⭐</small>
+                                            <h5 className="">$123.99</h5>
                                         </div>
-                                        <div className="container">
-                                            <p>Enrolled 191 </p>
-                                        </div>
-                                        <div class="card-footer">
+                                        <div class="card-footer text-center">
                                             <div className="row">
-                                            <h5 className="mx-3">$123</h5>
-                                            <h6 className="mr-4"><del>$123</del></h6>
-                                            <button className="btn btn-primary ml-4 ">Add To Cart</button>
-                                            </div>                                            
-                                        </div>                                       
+                                                {/* <h6 className="mr-4"><del>$123</del></h6> */}
+                                                <div className="col-xm-6 ">
+                                                    <button className="btn btn-primary ">Add To Cart</button>
+                                                </div>
+                                                <div className="col-xm-6 ">
+                                                    <Link to="course/datles"> <button className="btn btn-info ">Course Details</button> </Link>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
