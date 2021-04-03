@@ -16,7 +16,7 @@ const Navbar = () => {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <Link to="/home"> <a class="nav-link mr-2" href="">Home</a> </Link>
+                                 <a class="nav-link mr-2" href="/home">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link  mr-2" href="#events">Events</a>
@@ -50,7 +50,7 @@ const Navbar = () => {
                         <div className="">
                             <ul class="navbar-nav ">
                                 <li className="m-1">
-                                  <Link to="sign_in"><button className="btn btn-success">Login</button></Link>
+                                  <Link to="/sign_in"><button className="btn btn-success">Login</button></Link>
                                 </li>
                                 {/* <li className="m-1">
                                   <Link to="sign_up"><button className="btn btn-primary">Registration</button></Link>

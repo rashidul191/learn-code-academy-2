@@ -21,9 +21,7 @@ const Course = () => {
                                         <img className="img-fluid img-thumbnail rounded" src={webPic} alt="" />
                                         <div class="card-body">
                                             <h5 class="card-title">Compleat Web Programming Course</h5>
-                                            <small>  By <span className="text-success">Rashidul Islam</span> </small><br />
-                                            <small>Enrolled 191 </small><br />
-                                            <small>4.7 ⭐⭐⭐⭐⭐</small>
+                                            <p>By <span className="text-success">Rashidul Islam</span><br />Enrolled 191 <br />4.7 ⭐⭐⭐⭐⭐</p>
                                             <h5 className="">$123.99</h5>
                                         </div>
                                         <div class="card-footer text-center">
@@ -33,7 +31,7 @@ const Course = () => {
                                                     <button className="btn btn-primary ">Add To Cart</button>
                                                 </div>
                                                 <div className="col-xm-6 ">
-                                                    <Link to="course/datles"> <button className="btn btn-info ">Course Details</button> </Link>
+                                                    <Link to="/course/datles"> <button className="btn btn-info ">Course Details</button> </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -49,7 +47,7 @@ const Course = () => {
                                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                         </div>
                                         <div class="card-footer">
-                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                            <p class="text-muted">Last updated 3 mins ago</p>
                                         </div>
                                     </div>
                                 </div>
@@ -61,7 +59,7 @@ const Course = () => {
                                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                         </div>
                                         <div class="card-footer">
-                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                            <p class="text-muted">Last updated 3 mins ago</p>
                                         </div>
                                     </div>
                                 </div>

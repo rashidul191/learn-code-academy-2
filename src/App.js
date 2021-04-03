@@ -16,6 +16,7 @@ import SignIn from './Components/SignIn/SignIn';
 import CoursesDetails from './Components/CoursesDetails/CoursesDetails';
 import NewAccount from './Components/NewAccount/NewAccount';
 import Checkout from './Components/Checkout/Checkout';
+import TeConditions from './Components/TeConditions/TeConditions';
 
 export const UserContext = createContext();
 
@@ -37,6 +38,11 @@ function App() {
           <Router path="/privacy-policy">
             <PrivacyPolicy></PrivacyPolicy>
           </Router>
+
+          <Router path="/terms-of-service">
+            <TeConditions></TeConditions>
+          </Router>
+
           <Router path="/sign_in">
             <SignIn></SignIn>
           </Router>
