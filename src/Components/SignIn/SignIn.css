@@ -58,3 +58,6 @@ content: "-----------------";
 .success-masseges{
     color: green;
 }
+.error{
+    color: red;
+}

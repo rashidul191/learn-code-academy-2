@@ -54,6 +54,7 @@ const SignIn = () => {
                 // setLoggedInUser(newUserInfo);
                 // history.replace(from);
                 setUser(signedInUser);
+                setLoggedInUser(signedInUser);
                 history.replace(from);
                 console.log(displayName, email, photoURL);
             }).catch(err => {
@@ -78,6 +79,7 @@ const SignIn = () => {
                     photo: photoURL,
                 }
                 setUser(signedInFBUser);
+                setLoggedInUser(signedInFBUser);
                 history.replace(from);
             })
             .catch(error => {
@@ -174,7 +176,6 @@ const SignIn = () => {
 
     return (
         <section id="sign-in">
-
             <div className="sign-in-bg">
                 <div>
                     <Navbar></Navbar>
@@ -187,37 +188,36 @@ const SignIn = () => {
                                 ? <h3 className="py-3 text-center display-4">Create Account</h3>
                                 : <h3 className="py-3 text-center display-4">Sign In</h3>
                             }
-                            {
+                            {/* {
                                 user.inSignedIn && <div>
                                     <h2>Welcome , {user.name}</h2>
                                     <p>Your Email: {user.email}</p>
                                     <img src={user.photo} alt="imges here" />
                                 </div>
-                            }
+                            } */}
                             <form className="mx-5 " onSubmit={handleSubmit} action="">
                                 <div className="input-group-lg">
                                     {
                                         newUser &&
                                         <div className="input-group-lg">
                                             <label className="mt-2" htmlFor="name">Name:</label><br />
-                                            <input className="form-control " onBlur={handleBlur} type="text" name="name" placeholder="Your name" ref={register({ required: true })} />
+                                            <input className="form-control " onBlur={handleBlur} type="text" name="name" placeholder="Your name" required ref={register({ required: true })} />
                                             {errors.name && 'Name is required.'}
                                         </div>
                                     }
                                 </div>
                                 <div className="input-group-lg">
                                     <label className="mt-2" htmlFor="email">Email:</label>
-                                    <input className="form-control" onBlur={handleBlur} type="email" required name="email" id="email" placeholder="Email" ref={register({ required: true })} />
+                                    <input className="form-control" onBlur={handleBlur} type="email"  name="email" id="email" placeholder="Email" required ref={register({ required: true })} />
                                     {errors.email && 'Email is required.'}
                                 </div>
                                 <div className="input-group-lg">
                                     <label className="mt-2" htmlFor="password">Password:</label>
-                                    <input onBlur={handleBlur} className="form-control " type="password" name="password" id="password" placeholder="Password" ref={register({ pattern: /\d+/ })} required />
-                                    {errors.password && 'Password is required.'}
+                                    <input onBlur={handleBlur} className="form-control " type="password" name="password" id="password" placeholder="Password" required ref={register({ pattern: /\d+/ })}  />
+                                    {errors.password &&  'Password is required.'}
                                 </div>
                                 <div>
                                     <input className="btn btn-secondary  btn-block mt-2" type="submit" value={newUser ? 'Sign Up' : 'Sign In'} />
-
                                 </div>
                                 <div className="d-flex">
                                     {/* <div className=" justify-content-start">
@@ -232,8 +232,8 @@ const SignIn = () => {
                             <div>
                                 <p className="or lead text-center"> or sign up with </p>
                             </div>
-                            <div className="">
-                                {user.inSignedIn
+                            <div className="">                          
+                                {user.inSignedIn 
                                     ? <button onClick={handleSignOut}>Sign Out</button>
                                     : <button onClick={handleSignIn}>Google Sign In</button>
                                 }

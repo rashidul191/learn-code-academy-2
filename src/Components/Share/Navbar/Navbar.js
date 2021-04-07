@@ -10,7 +10,6 @@ import { useState } from 'react';
 const Navbar = () => {
 
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    const [newUser, setNewUser] = useState(false);
 
     return (
 
@@ -63,19 +62,16 @@ const Navbar = () => {
                             <ul class="navbar-nav ">
                                 <li className="m-1">
                                     {
-                                        newUser ? <Link to="/sign_in"> <button className="btn btn-success">Sign Out</button> </Link>
-                                            : <button className="btn btn-success">Sign In</button>
+                                        loggedInUser.email ? <button className="btn btn-primary" onClick={() => setLoggedInUser({})}>Sign Out</button>
+                                            : <Link to="/sign_in"><button className="btn btn-primary" >Sign In</button> </Link>
                                     }
                                 </li>
-                                {/* <li className="m-1">
-                                  <Link to="sign_up"><button className="btn btn-primary">Registration</button></Link>
-                                </li> */}
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
-        </section>
+        </section >
     );
 };
 

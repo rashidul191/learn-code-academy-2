@@ -24,7 +24,7 @@ export const UserContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <UserContext.Provider value = {[loggedInUser, setLoggedInUser]}>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <h3>Email: {loggedInUser.email}</h3>
       <Router>
         <Switch>
@@ -56,9 +56,13 @@ function App() {
             <CoursesDetails></CoursesDetails>
           </Router>
 
-          <PrivateRoute path="/checkout">
+          {/* <PrivateRoute path="/checkout">
            <Checkout></Checkout>
-          </PrivateRoute>
+          </PrivateRoute> */}
+
+          <Router path="/checkout">
+          <Checkout></Checkout>
+          </Router>
 
           <Router path="*">
             <NoMatch></NoMatch>
