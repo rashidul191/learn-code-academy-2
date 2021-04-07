@@ -17,6 +17,7 @@ import CoursesDetails from './Components/CoursesDetails/CoursesDetails';
 import NewAccount from './Components/NewAccount/NewAccount';
 import Checkout from './Components/Checkout/Checkout';
 import TeConditions from './Components/TeConditions/TeConditions';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -51,13 +52,13 @@ function App() {
             <NewAccount></NewAccount>
           </Router>
 
-          <Router path="/course/datles">
+          <Router path="/course/details">
             <CoursesDetails></CoursesDetails>
           </Router>
 
-          <Router path="/checkout">
+          <PrivateRoute path="/checkout">
            <Checkout></Checkout>
-          </Router>
+          </PrivateRoute>
 
           <Router path="*">
             <NoMatch></NoMatch>

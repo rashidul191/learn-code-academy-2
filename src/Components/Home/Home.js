@@ -5,12 +5,10 @@ import Header from './Header/Header';
 
 const Home = () => {
     return (
-
         <section>
             <Header></Header>
             <Course></Course>               
             <Footer></Footer>
-
         </section>
     );
 };

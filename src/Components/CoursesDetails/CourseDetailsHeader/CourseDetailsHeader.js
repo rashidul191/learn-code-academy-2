@@ -9,7 +9,7 @@ const CourseDetailsHeader = () => {
     // }
 
     return (
-        <section id="courseDetailsHeader ">
+        <section id="course-Details-Header ">
             <div className="container ">
                 <p className="lead py-2">Home/Course/CourseDetails</p>
             </div>
@@ -33,9 +33,8 @@ const CourseDetailsHeader = () => {
                         <div class=" text-white">
                             <div className="row">
                                 <h4 className="mx-4">$123.99</h4>
-                                <button className=" ml-5 btn btn-primary">Add To Cart</button>
-                                <Link to="/checkout"> <button className="btn btn-info">Buy Now</button></Link>
-
+                                <button className=" mx-3 btn btn-primary">Add To Cart</button>
+                                <Link to="/checkout">    <button className="btn btn-info">Buy Now</button> </Link>
                             </div>
                         </div>
                     </div>

@@ -8,13 +8,13 @@
 
 .pay-with{
     height: 100%;
-    width: 100%;    
+    width: 100%;   
 }
-li a{
-    color: tomato;
+li Link{
+    color: tomLinkto;
 }
 
-li a:hover{
+li Link:hover{
     color: white;
 }
 .icon-size{
@@ -22,6 +22,6 @@ li a:hover{
     width: 600px;
 }
 
-span a{
+span Link{
     color: white;
 }

@@ -31,7 +31,7 @@ const Course = () => {
                                                     <button className="btn btn-primary ">Add To Cart</button>
                                                 </div>
                                                 <div className="col-xm-6 ">
-                                                    <Link to="/course/datles"> <button className="btn btn-info ">Course Details</button> </Link>
+                                                    <Link to="/course/details"> <button className="btn btn-info ">Course Details</button> </Link>
                                                 </div>
                                             </div>
                                         </div>
