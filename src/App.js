@@ -18,6 +18,8 @@ import NewAccount from './Components/NewAccount/NewAccount';
 import Checkout from './Components/Checkout/Checkout';
 import TeConditions from './Components/TeConditions/TeConditions';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import UserDasbord from './Components/UserDasbord/UserDasbord';
+import MyProfile from './Components/UserDasbord/MyProfile/MyProfile';
 
 export const UserContext = createContext();
 
@@ -61,7 +63,19 @@ function App() {
           </PrivateRoute> */}
 
           <Router path="/checkout">
-          <Checkout></Checkout>
+            <Checkout></Checkout>
+          </Router>
+
+          {/* <PrivateRoute path="/my-profile">
+           <UserDasbord></UserDasbord>
+          </PrivateRoute> */}
+
+          <Router path="/user-dasbord">
+            <UserDasbord></UserDasbord>
+          </Router>
+
+          <Router path="/my-profile">
+            <MyProfile></MyProfile>
           </Router>
 
           <Router path="*">

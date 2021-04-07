@@ -1,0 +1,14 @@
+.log-out-btn{
+    height: 40px;
+    width: 80px;
+    border: none;
+    background: none;
+
+}
+
+
+li :hover{
+    background: skyblue;
+    color: white;
+    border-radius: 5px;
+}

@@ -62,7 +62,10 @@ const Navbar = () => {
                             <ul class="navbar-nav ">
                                 <li className="m-1">
                                     {
-                                        loggedInUser.email ? <button className="btn btn-primary" onClick={() => setLoggedInUser({})}>Sign Out</button>
+                                        loggedInUser.email ? <div>
+                                          <Link to="/my-profile"><button className="btn btn-info mr-3" >My Profile</button></Link>
+                                            <button className="btn btn-primary" onClick={() => setLoggedInUser({})}>Sign Out</button>
+                                        </div>
                                             : <Link to="/sign_in"><button className="btn btn-primary" >Sign In</button> </Link>
                                     }
                                 </li>

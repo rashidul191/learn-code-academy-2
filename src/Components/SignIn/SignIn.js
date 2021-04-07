@@ -11,6 +11,7 @@ import "firebase/auth";
 import firebaseConfig from './firebase.config';
 import { useState } from 'react';
 import { UserContext } from '../../App';
+import UserDasboardDetails from '../UserDasbord/UserDasboardDetails/UserDasboardDetails';
 firebase.initializeApp(firebaseConfig)
 
 const SignIn = () => {
@@ -104,8 +105,7 @@ const SignIn = () => {
             });
     }
     const handleSubmit = (e) => {
-        //  console.log(user.email, user.password);
-        if (newUser && user.email && user.password) {
+                if (newUser && user.email && user.password) {
             firebase.auth().
                 createUserWithEmailAndPassword(user.email, user.password)
                 .then(res => {
@@ -122,7 +122,6 @@ const SignIn = () => {
                     setUser(newUserInfo);
                 });
         }
-
         if (!newUser && user.email && user.password) {
             firebase.auth().signInWithEmailAndPassword(user.email, user.password)
                 .then(res => {
@@ -132,7 +131,7 @@ const SignIn = () => {
                     setUser(newUserInfo);
                     setLoggedInUser(newUserInfo);
                     history.replace(from);
-                    console.log("Sign In user info", res.user)
+                   // console.log("Sign In user info", res.user)
                 })
                 .catch(error => {
                     const newUserInfo = { ...user };
@@ -146,10 +145,8 @@ const SignIn = () => {
 
     const updateUserName = name => {
         const user = firebase.auth().currentUser;
-
         user.updateProfile({
             displayName: name,
-
         }).then(res => {
             console.log("User name updated successfully");
         }).catch(error => {
@@ -178,6 +175,7 @@ const SignIn = () => {
         <section id="sign-in">
             <div className="sign-in-bg">
                 <div>
+                    <UserDasboardDetails></UserDasboardDetails>
                     <Navbar></Navbar>
                 </div>
                 <div className="container ">
