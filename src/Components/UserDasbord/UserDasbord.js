@@ -9,7 +9,7 @@ const UserDasbord = () => {
         <section id="User-Dasbord">
             <Navbar></Navbar>
             <UserDasboardDetails></UserDasboardDetails>
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </section>
     );
 };

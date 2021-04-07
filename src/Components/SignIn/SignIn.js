@@ -175,7 +175,7 @@ const SignIn = () => {
         <section id="sign-in">
             <div className="sign-in-bg">
                 <div>
-                    <UserDasboardDetails></UserDasboardDetails>
+                    {/* <UserDasboardDetails></UserDasboardDetails> */}
                     <Navbar></Navbar>
                 </div>
                 <div className="container ">

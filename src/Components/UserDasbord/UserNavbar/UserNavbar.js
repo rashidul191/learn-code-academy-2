@@ -11,23 +11,19 @@ const UserNavbar = () => {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <Link class="nav-link mr-5 " to="/my-profile">My Profile</Link>
+                            <Link class="nav-link mr-5 user-link" to="/my-profile">My Profile</Link>
                         </li>
 
                         <li class="nav-item active">
-                            <Link class="nav-link mx-5" to="/student-message">Message</Link>
+                            <Link class="nav-link mx-5 user-link"  to="/student-message">Message</Link>
                         </li>
 
                         <li class="nav-item active">
-                            <Link class="nav-link mx-5" to="/student-notification">Notifications</Link>
+                            <Link class="nav-link mx-5 user-link" to="/student-notification">Notifications</Link>
                         </li>
 
                         <li class="nav-item active">
-                            <Link class="nav-link mx-5" to="/student-purchase">Purchase History</Link>
-                        </li>
-
-                        <li class="nav-item active ml-5">
-                            <button className="log-out-btn" >Log Out</button>
+                            <Link class="nav-link mx-5 user-link" to="/student-purchase">Purchase History</Link>
                         </li>
                     </ul>
                 </div>
