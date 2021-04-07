@@ -10,8 +10,12 @@ const UserNavbar = () => {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+                    <li class="nav-item active">
+                            <Link class="nav-link mx-5 user-link" to="/my-course">My Course</Link>
+                        </li>
+
                         <li class="nav-item active">
-                            <Link class="nav-link mr-5 user-link" to="/my-profile">My Profile</Link>
+                            <Link class="nav-link mx-5 user-link" to="/my-profile">My Profile</Link>
                         </li>
 
                         <li class="nav-item active">

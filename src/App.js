@@ -20,6 +20,10 @@ import TeConditions from './Components/TeConditions/TeConditions';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import UserDasbord from './Components/UserDasbord/UserDasbord';
 import MyProfile from './Components/UserDasbord/MyProfile/MyProfile';
+import MyCourse from './Components/UserDasbord/MyCourse/MyCourse';
+import Message from './Components/UserDasbord/Message/Message';
+import Notification from './Components/UserDasbord/Notification/Notification';
+import PurchaseHistory from './Components/UserDasbord/PurchaseHistory/PurchaseHistory';
 
 export const UserContext = createContext();
 
@@ -74,8 +78,24 @@ function App() {
             <UserDasbord></UserDasbord>
           </Router>
 
-          <Router path="/my-profile">
+          <Router path="/student/my-profile">
             <MyProfile></MyProfile>
+          </Router>
+
+          <Router path="/student/my-course">
+           <MyCourse></MyCourse>
+          </Router>
+
+          <Router path="/student/message">
+           <Message></Message>
+          </Router>
+
+          <Router path="/student/notification">
+            <Notification></Notification>
+          </Router>
+
+          <Router path="/student/purchase">
+            <PurchaseHistory></PurchaseHistory>
           </Router>
 
           <Router path="*">

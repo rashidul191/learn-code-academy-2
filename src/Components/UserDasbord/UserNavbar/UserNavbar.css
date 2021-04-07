@@ -5,9 +5,7 @@
     background: none;
 
 }
-
-
-user-link :hover{
+.user-link:hover{
     background: skyblue;
     color: white;
     border-radius: 5px;
